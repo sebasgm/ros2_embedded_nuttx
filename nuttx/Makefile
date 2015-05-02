@@ -74,7 +74,8 @@ emu: nuttx.bin
 	bash emulate.sh nuttx.bin
 
 program: nuttx.bin
-	-$(OPENOCD) -f board/stm32f4discovery.cfg -c "init" -c "reset halt" -c "flash write_image erase nuttx.bin 0x08000000 bin" -c "verify_image nuttx.bin 0x8000000; reset run; exit"
+#	-$(OPENOCD) -f board/stm32f4discovery.cfg -c "init" -c "reset halt" -c "flash write_image erase nuttx.bin 0x08000000 bin" -c "verify_image nuttx.bin 0x8000000; reset run; exit"
+	-$(OPENOCD) -f board/mbed-lpc1768.cfg -c "init" -c "reset halt" -c "flash write_image erase nuttx.bin 0x08000000 bin" -c "verify_image nuttx.bin 0x8000000; reset run; exit"
 
 dump_flash:
 	$(OPENOCD) -f ../tools/olimex-arm-usb-tiny-h.cfg -f ../tools/stm32.cfg -c "init; halt; dump_image nuttx.bin.dump 0x8000000 0x1000; reset run; shutdown"

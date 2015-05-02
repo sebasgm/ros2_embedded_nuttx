@@ -1,7 +1,7 @@
 This is openocd.info, produced by makeinfo version 5.2 from
 openocd.texi.
 
-This User's Guide documents release 0.9.0-dev, dated 19 August 2014, of
+This User's Guide documents release 0.9.0-rc1-dev, dated 2 May 2015, of
 the Open On-Chip Debugger (OpenOCD).
 
    * Copyright (C) 2008 The OpenOCD Project
@@ -27,7 +27,7 @@ File: openocd.info,  Node: Top,  Next: About,  Up: (dir)
 OpenOCD User's Guide
 ********************
 
-This User's Guide documents release 0.9.0-dev, dated 19 August 2014, of
+This User's Guide documents release 0.9.0-rc1-dev, dated 2 May 2015, of
 the Open On-Chip Debugger (OpenOCD).
 
    * Copyright (C) 2008 The OpenOCD Project
@@ -149,7 +149,7 @@ OpenOCD Web Site
 
 The OpenOCD web site provides the latest public news from the community:
 
-<http://openocd.sourceforge.net/>
+<http://openocd.org/>
 
 Latest User's Guide:
 ====================
@@ -158,11 +158,11 @@ The user's guide you are now reading may not be the latest one
 available.  A version for more recent code may be available.  Its HTML
 form is published regularly at:
 
-<http://openocd.sourceforge.net/doc/html/index.html>
+<http://openocd.org/doc/html/index.html>
 
 PDF form is likewise published at:
 
-<http://openocd.sourceforge.net/doc/pdf/openocd.pdf>
+<http://openocd.org/doc/pdf/openocd.pdf>
 
 OpenOCD User's Forum
 ====================
@@ -241,7 +241,7 @@ Doxygen reference manual.  This document contains more technical
 information about the software internals, development processes, and
 similar documentation:
 
-<http://openocd.sourceforge.net/doc/doxygen/html/index.html>
+<http://openocd.org/doc/doxygen/html/index.html>
 
 This document is a work-in-progress, but contributions would be welcome
 to fill in the gaps.  All of the source files are provided in-tree,
@@ -276,13 +276,12 @@ communication between developers:
 
 <https://lists.sourceforge.net/mailman/listinfo/openocd-devel>
 
-1.5 OpenOCD Bug Database
-========================
+1.5 OpenOCD Bug Tracker
+=======================
 
-During the 0.4.x release cycle the OpenOCD project team began using Trac
-for its bug database:
+The OpenOCD Bug Tracker is hosted on SourceForge:
 
-<https://sourceforge.net/apps/trac/openocd>
+<http://bugs.openocd.org/>
 
 
 File: openocd.info,  Node: Debug Adapter Hardware,  Next: About Jim-Tcl,  Prev: Developers,  Up: Top
@@ -718,7 +717,7 @@ well you'll see output something like
 
      Open On-Chip Debugger 0.4.0 (2010-01-14-15:06)
      For bug reports, read
-             http://openocd.sourceforge.net/doc/doxygen/bugs.html
+             http://openocd.org/doc/doxygen/bugs.html
      Info : JTAG tap: lm3s.cpu tap/device found: 0x3ba00477
             (mfg: 0x23b, part: 0xba00, ver: 0x3)
 
@@ -1360,49 +1359,49 @@ can; or as models for new files.
      a chip has multiple TAPs (maybe it has both ARM and DSP cores), the
      target config file defines all of them.
           $ ls target
-          aduc702x.cfg                       lpc1763.cfg
-          am335x.cfg                         lpc1764.cfg
-          amdm37x.cfg                        lpc1765.cfg
-          ar71xx.cfg                         lpc1766.cfg
-          at32ap7000.cfg                     lpc1767.cfg
-          at91r40008.cfg                     lpc1768.cfg
-          at91rm9200.cfg                     lpc1769.cfg
-          at91sam3ax_4x.cfg                  lpc1788.cfg
-          at91sam3ax_8x.cfg                  lpc17xx.cfg
-          at91sam3ax_xx.cfg                  lpc1850.cfg
-          at91sam3nXX.cfg                    lpc2103.cfg
-          at91sam3sXX.cfg                    lpc2124.cfg
-          at91sam3u1c.cfg                    lpc2129.cfg
-          at91sam3u1e.cfg                    lpc2148.cfg
-          at91sam3u2c.cfg                    lpc2294.cfg
-          at91sam3u2e.cfg                    lpc2378.cfg
-          at91sam3u4c.cfg                    lpc2460.cfg
-          at91sam3u4e.cfg                    lpc2478.cfg
-          at91sam3uxx.cfg                    lpc2900.cfg
-          at91sam3XXX.cfg                    lpc2xxx.cfg
-          at91sam4sd32x.cfg                  lpc3131.cfg
-          at91sam4sXX.cfg                    lpc3250.cfg
-          at91sam4XXX.cfg                    lpc4350.cfg
-          at91sam7se512.cfg                  lpc4350.cfg.orig
-          at91sam7sx.cfg                     mc13224v.cfg
-          at91sam7x256.cfg                   nuc910.cfg
-          at91sam7x512.cfg                   omap2420.cfg
-          at91sam9260.cfg                    omap3530.cfg
-          at91sam9260_ext_RAM_ext_flash.cfg  omap4430.cfg
-          at91sam9261.cfg                    omap4460.cfg
-          at91sam9263.cfg                    omap5912.cfg
-          at91sam9.cfg                       omapl138.cfg
-          at91sam9g10.cfg                    pic32mx.cfg
-          at91sam9g20.cfg                    pxa255.cfg
-          at91sam9g45.cfg                    pxa270.cfg
-          at91sam9rl.cfg                     pxa3xx.cfg
-          atmega128.cfg                      readme.txt
-          avr32.cfg                          samsung_s3c2410.cfg
-          c100.cfg                           samsung_s3c2440.cfg
-          c100config.tcl                     samsung_s3c2450.cfg
-          c100helper.tcl                     samsung_s3c4510.cfg
-          c100regs.tcl                       samsung_s3c6410.cfg
-          cs351x.cfg                         sharp_lh79532.cfg
+          aduc702x.cfg                       lpc1764.cfg
+          am335x.cfg                         lpc1765.cfg
+          amdm37x.cfg                        lpc1766.cfg
+          ar71xx.cfg                         lpc1767.cfg
+          at32ap7000.cfg                     lpc1768.cfg
+          at91r40008.cfg                     lpc1769.cfg
+          at91rm9200.cfg                     lpc1788.cfg
+          at91sam3ax_4x.cfg                  lpc17xx.cfg
+          at91sam3ax_8x.cfg                  lpc1850.cfg
+          at91sam3ax_xx.cfg                  lpc2103.cfg
+          at91sam3nXX.cfg                    lpc2124.cfg
+          at91sam3sXX.cfg                    lpc2129.cfg
+          at91sam3u1c.cfg                    lpc2148.cfg
+          at91sam3u1e.cfg                    lpc2294.cfg
+          at91sam3u2c.cfg                    lpc2378.cfg
+          at91sam3u2e.cfg                    lpc2460.cfg
+          at91sam3u4c.cfg                    lpc2478.cfg
+          at91sam3u4e.cfg                    lpc2900.cfg
+          at91sam3uxx.cfg                    lpc2xxx.cfg
+          at91sam3XXX.cfg                    lpc3131.cfg
+          at91sam4sd32x.cfg                  lpc3250.cfg
+          at91sam4sXX.cfg                    lpc4350.cfg
+          at91sam4XXX.cfg                    lpc4350.cfg.orig
+          at91sam7se512.cfg                  mc13224v.cfg
+          at91sam7sx.cfg                     nuc910.cfg
+          at91sam7x256.cfg                   omap2420.cfg
+          at91sam7x512.cfg                   omap3530.cfg
+          at91sam9260.cfg                    omap4430.cfg
+          at91sam9260_ext_RAM_ext_flash.cfg  omap4460.cfg
+          at91sam9261.cfg                    omap5912.cfg
+          at91sam9263.cfg                    omapl138.cfg
+          at91sam9.cfg                       pic32mx.cfg
+          at91sam9g10.cfg                    pxa255.cfg
+          at91sam9g20.cfg                    pxa270.cfg
+          at91sam9g45.cfg                    pxa3xx.cfg
+          at91sam9rl.cfg                     readme.txt
+          atmega128.cfg                      samsung_s3c2410.cfg
+          avr32.cfg                          samsung_s3c2440.cfg
+          c100.cfg                           samsung_s3c2450.cfg
+          c100config.tcl                     samsung_s3c4510.cfg
+          c100helper.tcl                     samsung_s3c6410.cfg
+          c100regs.tcl                       sharp_lh79532.cfg
+          cs351x.cfg                         sim3x.cfg
           davinci.cfg                        smp8634.cfg
           dragonite.cfg                      spear3xx.cfg
           dsp56321.cfg                       stellaris.cfg
@@ -1437,6 +1436,7 @@ can; or as models for new files.
           lpc1756.cfg                        tmpa900.cfg
           lpc1758.cfg                        tmpa910.cfg
           lpc1759.cfg                        u8500.cfg
+          lpc1763.cfg
    * _more_ ...  browse for other library files which may be useful.
      For example, there are various generic and CPU-specific utilities.
 
@@ -2363,6 +2363,10 @@ when OpenOCD is configured, in order to be made available at run time.
           e.g.
                cmsis_dap_vid_pid 0xc251 0xf001 0x0d28 0x0204
 
+      -- Config Command: cmsis_dap_serial [serial]
+          Specifies the SERIAL of the CMSIS-DAP device to use.  If not
+          specified, serial numbers are not considered.
+
       -- Command: cmsis-dap info
           Display various device information, like hardware version,
           firmware version, current bus status.
@@ -2651,8 +2655,8 @@ when OpenOCD is configured, in order to be made available at run time.
           a write-once setting.
 
  -- Interface Driver: jlink
-     Segger J-Link family of USB adapters.  It currently supports only
-     the JTAG transport.
+     Segger J-Link family of USB adapters.  It currently supports JTAG
+     and SWD transports.
 
           Compatibility Note: Segger released many firmware versions for
           the many harware versions they produced.  OpenOCD was
@@ -2698,6 +2702,17 @@ when OpenOCD is configured, in order to be made available at run time.
       -- Config: jlink pid val
           Set the USB PID of the interface.  As a configuration command,
           it can be used only before 'init'.
+      -- Config: jlink serial serial-number
+          Set the SERIAL-NUMBER of the interface, in case more than one
+          adapter is connected to the host.  If not specified, serial
+          numbers are not considered.
+
+          Note that there may be leading zeros in the SERIAL-NUMBER
+          string that will not show in the Segger software, but must be
+          specified here.  Debug level 3 output contains serial numbers
+          if there is a mismatch.
+
+          As a configuration command, it can be used only before 'init'.
 
  -- Interface Driver: parport
      Supports PC parallel port bit-banging cables: Wigglers, PLD
@@ -2813,12 +2828,16 @@ when OpenOCD is configured, in order to be made available at run time.
      OpenOCD would normally use to access the target.
 
      Currently supported adapters include the ST STLINK and TI ICDI.
+     STLINK firmware version >= V2.J21.S4 recommended due to issues with
+     earlier versions of firmware where serial number is reset after
+     first use.  Suggest using ST firmware update utility to upgrade
+     STLINK firmware even if current version reported is V2.J21.S4.
 
       -- Config Command: hla_device_desc description
           Currently Not Supported.
 
       -- Config Command: hla_serial serial
-          Currently Not Supported.
+          Specifies the serial number of the adapter.
 
       -- Config Command: hla_layout ('stlink'|'icdi')
           Specifies the adapter layout to use.
@@ -2826,12 +2845,9 @@ when OpenOCD is configured, in order to be made available at run time.
       -- Config Command: hla_vid_pid vid pid
           The vendor ID and product ID of the device.
 
-      -- Config Command: trace source_clock_hz [output_file_path]
-          Enable SWO tracing (if supported).  The source clock rate for
-          the trace port must be specified, this is typically the CPU
-          clock rate.  If the optional output file is specified then raw
-          trace data is appended to the file, and the file is created if
-          it does not exist.
+      -- Command: hla_command command
+          Execute a custom adapter-specific command.  The COMMAND string
+          is passed as is to the underlying adapter layout handler.
 
  -- Interface Driver: opendous
      opendous-jtag is a freely programmable USB adapter.
@@ -2872,12 +2888,21 @@ communicate with debug targets (or perhaps to program flash memory).
      displays the names of the transports supported by this version of
      OpenOCD.
 
- -- Command: transport select transport_name
+ -- Command: transport select 'transport_name'
      Select which of the supported transports to use in this OpenOCD
-     session.  The transport must be supported by the debug adapter
+     session.
+
+     When invoked with 'transport_name', attempts to select the named
+     transport.  The transport must be supported by the debug adapter
      hardware and by the version of OpenOCD you are using (including the
-     adapter's driver).  No arguments: returns name of session's
-     selected transport.
+     adapter's driver).
+
+     If no transport has been selected and no 'transport_name' is
+     provided, 'transport select' auto-selects the first transport
+     supported by the debug adapter.
+
+     'transport select' always returns the name of the session's
+     selected transport, if any.
 
 8.3.1 JTAG Transport
 --------------------
@@ -2888,6 +2913,10 @@ more Test Access Points (TAPs), each of which must be explicitly
 declared.  JTAG supports both debugging and boundary scan testing.
 Flash programming support is built on top of debug support.
 
+JTAG transport is selected with the command 'transport select jtag'.
+Unless your adapter uses *note the hla interface driver: hla_interface,
+in which case the command is 'transport select hla_jtag'.
+
 8.3.2 SWD Transport
 -------------------
 
@@ -2896,6 +2925,11 @@ Debug Access Point (DAP, which must be explicitly declared.  (SWD uses
 fewer signal wires than JTAG.) SWD is debug-oriented, and does not
 support boundary scan testing.  Flash programming support is built on
 top of debug support.  (Some processors support both JTAG and SWD.)
+
+SWD transport is selected with the command 'transport select swd'.
+Unless your adapter uses *note the hla interface driver: hla_interface,
+in which case the command is 'transport select hla_swd'.
+
  -- Command: swd newdap ...
      Declares a single DAP which uses SWD transport.  Parameters are
      currently the same as "jtag newtap" but this is expected to change.
@@ -2903,13 +2937,7 @@ top of debug support.  (Some processors support both JTAG and SWD.)
      Updates TRN (turnaraound delay) and prescaling.fields of the Wire
      Control Register (WCR). No parameters: displays current settings.
 
-8.3.3 CMSIS-DAP Transport
--------------------------
-
-CMSIS-DAP is an ARM-specific transport that is used to connect to
-compilant debuggers.
-
-8.3.4 SPI Transport
+8.3.3 SPI Transport
 -------------------
 
 The Serial Peripheral Interface (SPI) is a general purpose transport
@@ -3670,19 +3698,6 @@ and there are many more.
 
 Several commands let you examine the list of targets:
 
- -- Command: target count
-     _Note: target numbers are deprecated; don't use them.  They will be
-     removed shortly after August 2010, including this command.  Iterate
-     target using 'target names', not by counting._
-
-     Returns the number of targets, N.  The highest numbered target is N
-     - 1.
-          set c [target count]
-          for { set x 0 } { $x < $c } { incr x } {
-              # Assuming you have created this function
-              print_target_details $x
-          }
-
  -- Command: target current
      Returns the name of the current target.
 
@@ -3691,15 +3706,6 @@ Several commands let you examine the list of targets:
           foreach t [target names] {
               puts [format "Target: %s\n" $t]
           }
-
- -- Command: target number number
-     _Note: target numbers are deprecated; don't use them.  They will be
-     removed shortly after August 2010, including this command._
-
-     The list of targets is numbered starting at zero.  This command
-     returns the name of the target at index NUMBER.
-          set thename [target number $x]
-          puts [format "Target %d is: %s\n" $x $thename]
 
  -- Command: targets [name]
      _Note: the name of this command is plural.  Other target command
@@ -3712,8 +3718,8 @@ Several commands let you examine the list of targets:
      target with the given NAME; this is only relevant on boards which
      have more than one target.
 
-11.2 Target CPU Types and Variants
-==================================
+11.2 Target CPU Types
+=====================
 
 Each target has a "CPU type", as shown in the output of the 'targets'
 command.  You need to specify that type when calling 'target create'.
@@ -3723,18 +3729,12 @@ support it integrates, whether it has an MMU (and if so, what kind),
 what core-specific commands may be available (*note Architecture and
 Core Commands::), and more.
 
-For some CPU types, OpenOCD also defines "variants" which indicate
-differences that affect their handling.  For example, a particular
-implementation bug might need to be worked around in some chip versions.
-
 It's easy to see what target types are supported, since there's a
-command to list them.  However, there is currently no way to list what
-target variants are supported (other than by reading the OpenOCD source
-code).
+command to list them.
 
  -- Command: target types
      Lists all supported target types.  At this writing, the supported
-     CPU types and variants are:
+     CPU types are:
 
         * 'arm11' - this is a generation of ARMv6 cores
         * 'arm720t' - this is an ARMv4 core with an MMU
@@ -3753,15 +3753,9 @@ code).
           this is still incomplete.)
         * 'fa526' - resembles arm920 (w/o Thumb)
         * 'feroceon' - resembles arm926
-        * 'mips_m4k' - a MIPS core.  This supports one variant:
+        * 'mips_m4k' - a MIPS core
         * 'xscale' - this is actually an architecture, not a CPU type.
-          It is based on the ARMv5 architecture.  There are several
-          variants defined:
-             - 'ixp42x', 'ixp45x', 'ixp46x', 'pxa27x' ...  instruction
-               register length is 7 bits
-             - 'pxa250', 'pxa255', 'pxa26x' ...  instruction register
-               length is 5 bits
-             - 'pxa3xx' ...  instruction register length is 11 bits
+          It is based on the ARMv5 architecture.
         * 'openrisc' - this is an OpenRISC 1000 core.  The current
           implementation supports three JTAG TAP cores:
              - 'OpenCores TAP' (See:
@@ -3847,8 +3841,7 @@ the boot loader.
           targettypes.
         * CONFIGPARAMS ...  all parameters accepted by '$target_name
           configure' are permitted.  If the target is big-endian, set it
-          here with '-endian big'.  If the variant matters, set it here
-          with '-variant'.
+          here with '-endian big'.
 
           You _must_ set the '-chain-position DOTTED.NAME' here.
 
@@ -3859,7 +3852,7 @@ the boot loader.
 
      _Warning:_ changing some of these after setup is dangerous.  For
      example, moving a target from one TAP to another; and changing its
-     endianness or variant.
+     endianness.
 
         * '-chain-position' DOTTED.NAME - names the TAP used to access
           this target.
@@ -3872,9 +3865,6 @@ the boot loader.
           handlers.  Calling this twice with two different event names
           assigns two different handlers, but calling it twice with the
           same event name assigns only one handler.
-
-        * '-variant' NAME - specifies a variant of the target, which
-          OpenOCD needs to know about.
 
         * '-work-area-backup' ('0'|'1') - says whether the work area
           gets backed up; by default, _it is not backed up._  When
@@ -3898,8 +3888,8 @@ the boot loader.
 
         * '-rtos' RTOS_TYPE - enable rtos support for target, RTOS_TYPE
           can be one of 'auto'|'eCos'|'ThreadX'|
-          'FreeRTOS'|'linux'|'ChibiOS'|'embKernel' *Note RTOS Support:
-          gdbrtossupport.
+          'FreeRTOS'|'linux'|'ChibiOS'|'embKernel'|'mqx' *Note RTOS
+          Support: gdbrtossupport.
 
 11.4 Other $target_name Commands
 ================================
@@ -4124,6 +4114,8 @@ The following target events are defined:
      After all targets have resumed
    * resumed
      Target has resumed
+   * trace-config
+     After target hardware trace configuration was changed
 
 
 File: openocd.info,  Node: Flash Commands,  Next: Flash Programming,  Prev: CPU Configuration,  Up: Top
@@ -4275,10 +4267,11 @@ flashprotect.
 
  -- Command: flash write_image [erase] [unlock] filename [offset] [type]
      Write the image 'filename' to the current target's flash bank(s).
-     A relocation OFFSET may be specified, in which case it is added to
-     the base address for each section in the image.  The file [TYPE]
-     can be specified explicitly as 'bin' (binary), 'ihex' (Intel hex),
-     'elf' (ELF file), 's19' (Motorola s19).  'mem', or 'builder'.  The
+     Only loadable sections from the image are written.  A relocation
+     OFFSET may be specified, in which case it is added to the base
+     address for each section in the image.  The file [TYPE] can be
+     specified explicitly as 'bin' (binary), 'ihex' (Intel hex), 'elf'
+     (ELF file), 's19' (Motorola s19).  'mem', or 'builder'.  The
      relevant flash sectors will be erased prior to programming if the
      'erase' parameter is given.  If 'unlock' is provided, then the
      flash banks are unlocked before erase and program.  The flash bank
@@ -4325,7 +4318,7 @@ flashprotect.
      specified by this comamnd or the flash driver then it defaults to
      0xff.
 
- -- Command: program filename [verify] [reset] [offset]
+ -- Command: program filename [verify] [reset] [exit] [offset]
      This is a helper script that simplifies using OpenOCD as a
      standalone programmer.  The only required parameter is 'filename',
      the others are optional.  *Note Flash Programming::.
@@ -4420,6 +4413,50 @@ activate driver-specific commands.
 
           flash bank $_FLASHNAME aduc702x 0 0 0 0 $_TARGETNAME
 
+ -- Flash Driver: at91samd
+
+      -- Command: at91samd chip-erase
+          Issues a complete Flash erase via the Device Service Unit
+          (DSU). This can be used to erase a chip back to its factory
+          state and does not require the processor to be halted.
+
+      -- Command: at91samd set-security
+          Secures the Flash via the Set Security Bit (SSB) command.
+          This prevents access to the Flash and can only be undone by
+          using the chip-erase command which erases the Flash contents
+          and turns off the security bit.  Warning: at this time,
+          openocd will not be able to communicate with a secured chip
+          and it is therefore not possible to chip-erase it without
+          using another tool.
+
+               at91samd set-security enable
+
+      -- Command: at91samd eeprom
+          Shows or sets the EEPROM emulation size configuration, stored
+          in the User Row of the Flash.  When setting, the EEPROM size
+          must be specified in bytes and it must be one of the permitted
+          sizes according to the datasheet.  Settings are written
+          immediately but only take effect on MCU reset.  EEPROM
+          emulation requires additional firmware support and the minumum
+          EEPROM size may not be the same as the minimum that the
+          hardware supports.  Set the EEPROM size to 0 in order to
+          disable this feature.
+
+               at91samd eeprom
+               at91samd eeprom 1024
+
+      -- Command: at91samd bootloader
+          Shows or sets the bootloader size configuration, stored in the
+          User Row of the Flash.  This is called the BOOTPROT region.
+          When setting, the bootloader size must be specified in bytes
+          and it must be one of the permitted sizes according to the
+          datasheet.  Settings are written immediately but only take
+          effect on MCU reset.  Setting the bootloader size to 0
+          disables bootloader protection.
+
+               at91samd bootloader
+               at91samd bootloader 16384
+
  -- Flash Driver: at91sam3
      All members of the AT91SAM3 microcontroller family from Atmel
      include internal flash and use ARM's Cortex-M3 core.  The driver
@@ -4480,6 +4517,17 @@ activate driver-specific commands.
      include internal flash and use ARM's Cortex-M4 core.  This driver
      uses the same cmd names/syntax as *Note at91sam3::.
 
+ -- Flash Driver: at91sam4l
+     All members of the AT91SAM4L microcontroller family from Atmel
+     include internal flash and use ARM's Cortex-M4 core.  This driver
+     uses the same cmd names/syntax as *Note at91sam3::.
+
+     The AT91SAM4L driver adds some additional commands:
+      -- Command: at91sam4l smap_reset_deassert
+          This command releases internal reset held by SMAP and prepares
+          reset vector catch in case of reset halt.  Command is used
+          internally in event event reset-deassert-post.
+
  -- Flash Driver: at91sam7
      All members of the AT91SAM7 microcontroller family from Atmel
      include internal flash and use ARM7TDMI cores.  The driver
@@ -4535,11 +4583,10 @@ activate driver-specific commands.
      pages is not supported._
 
  -- Flash Driver: lpc2000
-     All members of the LPC11(x)00 and LPC1300 microcontroller families
-     and most members of the LPC1700, LPC1800, LPC2000 and LPC4300
-     microcontroller families from NXP include internal flash and use
-     Cortex-M0 (LPC11(x)00), Cortex-M3 (LPC1300, LPC1700, LPC1800),
-     Cortex-M4 (LPC4300) or ARM7TDMI (LPC2000) cores.
+     This is the driver to support internal flash of all members of the
+     LPC11(x)00 and LPC1300 microcontroller families and most members of
+     the LPC800, LPC1500, LPC1700, LPC1800, LPC2000, LPC4000 and
+     LPC54100 microcontroller families from NXP.
 
           Note: There are LPC2000 devices which are not supported by the
           LPC2000 driver: The LPC2888 is supported by the LPC288X
@@ -4551,11 +4598,12 @@ activate driver-specific commands.
 
         * VARIANT ...  required, may be 'lpc2000_v1' (older LPC21xx and
           LPC22xx) 'lpc2000_v2' (LPC213x, LPC214x, LPC210[123], LPC23xx
-          and LPC24xx) 'lpc1700' (LPC175x and LPC176x) 'lpc4300' -
-          available also as 'lpc1800' alias (LPC18x[2357] and
-          LPC43x[2357]) 'lpc1100' (LPC11(x)xx and LPC13xx) or 'auto' -
-          automatically detects flash variant and size for LPC11(x)00,
-          LPC1300 and LPC1700
+          and LPC24xx) 'lpc1700' (LPC175x and LPC176x and LPC177x/8x)
+          'lpc4300' - available also as 'lpc1800' alias (LPC18x[2357]
+          and LPC43x[2357]) 'lpc800' (LPC8xx) 'lpc1100' (LPC11(x)xx and
+          LPC13xx) 'lpc1500' (LPC15xx) 'lpc54100' (LPC541xx) 'lpc4000'
+          (LPC40xx) or 'auto' - automatically detects flash variant and
+          size for LPC11(x)00, LPC8xx, LPC13xx, LPC17xx and LPC40xx
         * CLOCK_KHZ ...  the frequency, in kiloHertz, at which the core
           is running
         * 'calc_checksum' ...  optional (but you probably want to
@@ -4683,7 +4731,13 @@ activate driver-specific commands.
                lpc2900 secure_jtag 0
 
  -- Flash Driver: ocl
-     _No idea what this is, other than using some arm7/arm9 core._
+     This driver is an implementation of the "on chip flash loader"
+     protocol proposed by Pavel Chromy.
+
+     It is a minimalistic command-response protocol intended to be used
+     over a DCC when communicating with an internal or external flash
+     loader running from RAM. An example implementation for AT91SAM7x is
+     available in 'contrib/loaders/flash/at91sam7x/'.
 
           flash bank $_FLASHNAME ocl 0 0 0 0 $_TARGETNAME
 
@@ -4702,21 +4756,52 @@ activate driver-specific commands.
           Unlock and erase specified chip BANK.  This will remove any
           Code Protection.
 
+ -- Flash Driver: psoc4
+     All members of the PSoC 41xx/42xx microcontroller family from
+     Cypress include internal flash and use ARM Cortex M0 cores.  The
+     driver automatically recognizes a number of these chips using the
+     chip identification register, and autoconfigures itself.
+
+     Note: Erased internal flash reads as 00.  System ROM of PSoC 4 does
+     not implement erase of a flash sector.
+
+          flash bank $_FLASHNAME psoc4 0 0 0 0 $_TARGETNAME
+
+     psoc4-specific commands
+      -- Command: psoc4 flash_autoerase num (on|off)
+          Enables or disables autoerase mode for a flash bank.
+
+          If flash_autoerase is off, use mass_erase before flash
+          programming.  Flash erase command fails if region to erase is
+          not whole flash memory.
+
+          If flash_autoerase is on, a sector is both erased and
+          programmed in one system ROM call.  Flash erase command is
+          ignored.  This mode is suitable for gdb load.
+
+          The NUM parameter is a value shown by 'flash banks'.
+
+      -- Command: psoc4 mass_erase num
+          Erases the contents of the flash memory, protection and
+          security lock.
+
+          The NUM parameter is a value shown by 'flash banks'.
+
  -- Flash Driver: stellaris
-     All members of the Stellaris LM3Sxxx microcontroller family from
-     Texas Instruments include internal flash and use ARM Cortex M3
-     cores.  The driver automatically recognizes a number of these chips
+     All members of the Stellaris LM3Sxxx, LM4x and Tiva C
+     microcontroller families from Texas Instruments include internal
+     flash.  The driver automatically recognizes a number of these chips
      using the chip identification register, and autoconfigures itself.
      (1)
 
           flash bank $_FLASHNAME stellaris 0 0 0 0 $_TARGETNAME
 
-      -- Command: stellaris recover bank_id
+      -- Command: stellaris recover
           Performs the _Recovering a "Locked" Device_ procedure to
-          restore the flash specified by BANK_ID and its associated
-          nonvolatile registers to their factory default values
-          (erased).  This is the only way to remove flash protection or
-          re-enable debugging if that capability has been disabled.
+          restore the flash and its associated nonvolatile registers to
+          their factory default values (erased).  This is the only way
+          to remove flash protection or re-enable debugging if that
+          capability has been disabled.
 
           Note that the final "power cycle the chip" step in this
           procedure must be performed by hand, since OpenOCD can't do
@@ -4788,15 +4873,26 @@ activate driver-specific commands.
 
  -- Flash Driver: stm32lx
      All members of the STM32L microcontroller families from ST
-     Microelectronics include internal flash and use ARM Cortex-M3
-     cores.  The driver automatically recognizes a number of these chips
-     using the chip identification register, and autoconfigures itself.
+     Microelectronics include internal flash and use ARM Cortex-M3 and
+     Cortex-M0+ cores.  The driver automatically recognizes a number of
+     these chips using the chip identification register, and
+     autoconfigures itself.
 
      Note that some devices have been found that have a flash size
      register that contains an invalid value, to workaround this issue
-     you can override the probed value used by the flash driver.
+     you can override the probed value used by the flash driver.  If you
+     use 0 as the bank base address, it tells the driver to autodetect
+     the bank location assuming you're configuring the second bank.
 
-          flash bank $_FLASHNAME stm32lx 0 0x20000 0 0 $_TARGETNAME
+          flash bank $_FLASHNAME stm32lx 0x08000000 0x20000 0 0 $_TARGETNAME
+
+     Some stm32lx-specific commands are defined:
+
+      -- Command: stm32lx mass_erase num
+          Mass erases the entire stm32lx device (all flash banks and
+          EEPROM data).  This is the only way to unlock a protected
+          flash (unless RDP Level is 2 which can't be unlocked at all).
+          The NUM parameter is a value shown by 'flash banks'.
 
  -- Flash Driver: str7x
      All members of the STR7 microcontroller family from ST
@@ -4871,6 +4967,25 @@ activate driver-specific commands.
      'mb9bfxx3.cpu', 'mb9bfxx4.cpu', 'mb9bfxx5.cpu' or 'mb9bfxx6.cpu'.
 
           flash bank $_FLASHNAME fm3 0 0 0 0 $_TARGETNAME
+
+ -- Flash Driver: sim3x
+     All members of the SiM3 microcontroller family from Silicon
+     Laboratories include internal flash and use ARM Cortex M3 cores.
+     It supports both JTAG and SWD interface.  The SIM3X driver tries to
+     probe the device to auto detect the MCU. If this failes, it will
+     use the SIZE parameter as the size of flash bank.
+
+          flash bank $_FLASHNAME sim3x 0 $_CPUROMSIZE 0 0 $_TARGETNAME
+
+     There are 2 commands defined in the SIM3X driver:
+
+      -- Command: sim3x mass_erase
+          Erases the complete flash.  This is used to unlock the flash.
+          And this command is only possible when using the SWD
+          interface.
+
+      -- Command: sim3x lock
+          Lock the flash.  To unlock use the 'sim3x mass_erase' command.
 
 12.4.3 str9xpec driver
 ----------------------
@@ -4965,6 +5080,33 @@ prompt.
           command works only for chips that do not have factory
           pre-programmed region 0 code.
 
+ -- Flash Driver: mrvlqspi
+     This driver supports QSPI flash controller of Marvell's Wireless
+     Microcontroller platform.
+
+     The flash size is autodetected based on the table of known JEDEC
+     IDs hardcoded in the OpenOCD sources.
+
+          flash bank $_FLASHNAME mrvlqspi 0x0 0 0 0 $_TARGETNAME 0x46010000
+
+ -- Flash Driver: mdr
+     This drivers handles the integrated NOR flash on Milandr Cortex-M
+     based controllers.  A known limitation is that the Info memory
+     can't be read or verified as it's not memory mapped.
+
+          flash bank <name> mdr <base> <size> 0 0 <target#> TYPE PAGE_COUNT SEC_COUNT
+
+        * TYPE - 0 for main memory, 1 for info memory
+        * PAGE_COUNT - total number of pages
+        * SEC_COUNT - number of sector per page count
+
+     Example usage:
+          if { [info exists IMEMORY] && [string equal $IMEMORY true] } {
+             flash bank ${_CHIPNAME}_info.flash mdr 0x00000000 0x01000 0 0 $_TARGETNAME 1 1 4
+          } else {
+             flash bank $_CHIPNAME.flash mdr 0x00000000 0x20000 0 0 $_TARGETNAME 0 32 4
+          }
+
 12.5 mFlash
 ===========
 
@@ -5037,7 +5179,7 @@ given in *note Flash Programming Commands: flashprogrammingcommands.
 
 To simplify using the flash cmds directly a jimtcl script is available
 that handles the programming and verify stage.  OpenOCD will
-program/verify/reset the target and shutdown.
+program/verify/reset the target and optionally shutdown.
 
 The script is executed as follows and by default the following actions
 will be peformed.
@@ -5048,18 +5190,18 @@ will be peformed.
      the filename given.
   4. 'verify_image' is called if 'verify' parameter is given.
   5. 'reset run' is called if 'reset' parameter is given.
-  6. OpenOCD is shutdown.
+  6. OpenOCD is shutdown if 'exit' parameter is given.
 
 An example of usage is given below.  *Note program::.
 
      # program and verify using elf/hex/s19. verify and reset
      # are optional parameters
      openocd -f board/stm32f3discovery.cfg \
-     	-c "program filename.elf verify reset"
+     	-c "program filename.elf verify reset exit"
 
      # binary files need the flash address passing
      openocd -f board/stm32f3discovery.cfg \
-     	-c "program filename.bin 0x08000000"
+     	-c "program filename.bin exit 0x08000000"
 
 
 File: openocd.info,  Node: NAND Flash Commands,  Next: PLD/FPGA Commands,  Prev: Flash Programming,  Up: Top
@@ -5526,9 +5668,10 @@ Intent:
      discouraged.)  Useful in connection with script files ('script'
      command and 'target_name' configuration).
 
- -- Command: shutdown
+ -- Command: shutdown ['error']
      Close the OpenOCD daemon, disconnecting all clients (GDB, telnet,
-     other).
+     other).  If option 'error' is used, OpenOCD will return a non-zero
+     exit code to the parent process.
 
  -- Command: debug_level [n]
      Display debug level.  If N (from 0..3) is provided, then set it to
@@ -6483,7 +6626,79 @@ addition to other core-specific commands that may be available.
      fix CSW_SPROT from register AP_REG_CSW on selected dap.  Defaulting
      to 0.
 
-17.5.2 Cortex-M specific commands
+17.5.2 ARMv7-M specific commands
+--------------------------------
+
+ -- Command: tpiu config ('disable' | (('external' | 'internal
+          FILENAME') ('sync PORT_WIDTH' | (('manchester' | 'uart')
+          FORMATTER_ENABLE)) TRACECLKIN_FREQ [TRACE_FREQ]))
+
+     ARMv7-M architecture provides several modules to generate debugging
+     information internally (ITM, DWT and ETM). Their output is directed
+     through TPIU to be captured externally either on an SWO pin (this
+     configuration is called SWV) or on a synchronous parallel trace
+     port.
+
+     This command configures the TPIU module of the target and, if
+     internal capture mode is selected, starts to capture trace output
+     by using the debugger adapter features.
+
+     Some targets require additional actions to be performed in the
+     trace-config handler for trace port to be activated.
+
+     Command options:
+        - 'disable' disable TPIU handling;
+        - 'external' configure TPIU to let user capture trace output
+          externally (with an additional UART or logic analyzer
+          hardware);
+        - 'internal FILENAME' configure TPIU and debug adapter to gather
+          trace data and append it to FILENAME (which can be either a
+          regular file or a named pipe);
+        - 'sync PORT_WIDTH' use synchronous parallel trace output mode,
+          and set port width to PORT_WIDTH;
+        - 'manchester' use asynchronous SWO mode with Manchester coding;
+        - 'uart' use asynchronous SWO mode with NRZ (same as regular
+          UART 8N1) coding;
+        - FORMATTER_ENABLE is 'on' or 'off' to enable or disable TPIU
+          formatter which needs to be used when both ITM and ETM data is
+          to be output via SWO;
+        - TRACECLKIN_FREQ this should be specified to match target's
+          current TRACECLKIN frequency (usually the same as HCLK);
+        - TRACE_FREQ trace port frequency.  Can be omitted in internal
+          mode to let the adapter driver select the maximum supported
+          rate automatically.
+
+     Example usage:
+       1. STM32L152 board is programmed with an application that
+          configures PLL to provide core clock with 24MHz frequency; to
+          use ITM output it's enough to:
+               #include <libopencm3/cm3/itm.h>
+                   ...
+                   	ITM_STIM8(0) = c;
+                   ...
+          (the most obvious way is to use the first stimulus port for
+          printf, for that this ITM_STIM8 assignment can be used inside
+          _write(); to make it blocking to avoid data loss, add 'while
+          (!(ITM_STIM8(0) & ITM_STIM_FIFOREADY));');
+       2. An FT2232H UART is connected to the SWO pin of the board;
+       3. Commands to configure UART for 12MHz baud rate:
+               $ setserial /dev/ttyUSB1 spd_cust divisor 5
+               $ stty -F /dev/ttyUSB1 38400
+          (FT2232H's base frequency is 60MHz, spd_cust allows to alias
+          38400 baud with our custom divisor to get 12MHz)
+       4. 'itmdump -f /dev/ttyUSB1 -d1'
+       5. 'openocd -f interface/stlink-v2-1.cfg -c "transport select
+          hla_swd" -f target/stm32l1.cfg -c "tpiu config external uart
+          off 24000000 12000000"'
+
+ -- Command: itm port PORT ('0'|'1'|'on'|'off')
+     Enable or disable trace output for ITM stimulus PORT (counting from
+     0).  Port 0 is enabled on target creation automatically.
+
+ -- Command: itm ports ('0'|'1'|'on'|'off')
+     Enable or disable trace output for all ITM stimulus ports.
+
+17.5.3 Cortex-M specific commands
 ---------------------------------
 
  -- Command: cortex_m maskisr ('auto'|'on'|'off')
